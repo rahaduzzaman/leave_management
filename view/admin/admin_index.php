@@ -60,9 +60,9 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="page-scroll" href="#">Home</a></li>
-                        <li><a class="page-scroll" href="#">Add Student</a></li>
-                        <li><a class="page-scroll" href="#">Add Teacher</a></li>
-                        <li><a class="page-scroll" href="#">Assign Teacher</a></li>
+                        <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#addstudent"> Add Student</a></li>
+                        <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#addteacher">Add Teacher</a></li>
+                        <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#assign">Assign Teacher</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -70,6 +70,98 @@
             <!-- /.container -->
         </nav>
 
+
+        <!-- Modal for Student -->
+        <div class="modal fade" id="addstudent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header bg-info">
+                        <button type="button" class="close text-xxl" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title text-center" id="myModalLabel">Add Student</h3>
+                    </div>
+                    <form action="" method="post">
+                        <div class="modal-body">
+                            <label><strong>Student Name</strong></label>
+                            <input class="form-control" name="stname" type="text" /><br/>
+                            <label><strong>Password</strong></label>
+                            <input class="form-control" name="stpass" type="password" /><br/>
+                            <label><strong>Email</strong></label>
+                            <input class="form-control" name="stemail" type="email" /><br/>
+                            <label><strong>Gender</strong></label>
+                            <select class="form-control" name="stsex" >
+                                <option>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">female</option>
+                            </select> <br/>
+                            <label><strong>Phone No</strong></label>
+                            <input class="form-control" name="stnum" type="number" /><br/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Save Student</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Teacher -->
+        <div class="modal fade" id="addteacher" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <button type="button" class="close text-xxl" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title text-center" id="myModalLabel">Add Teacher</h3>
+                    </div>
+                    <form action="" method="post">
+                        <div class="modal-body">
+                            <label><strong>Teacher Name</strong></label>
+                            <input class="form-control" name="tcname" type="text" /><br/>
+                            <label><strong>Password</strong></label>
+                            <input class="form-control" name="tcpass" type="password" /><br/>
+                            <label><strong>Email</strong></label>
+                            <input class="form-control" name="tcemail" type="email" /><br/>
+                            <label><strong>Gender</strong></label>
+                            <select class="form-control" name="tcsex" >
+                                <option>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">female</option>
+                            </select> <br/>
+                            <label><strong>Phone No</strong></label>
+                            <input class="form-control" name="tcnum" type="number" /><br/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Save Teacher</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for Teacher -->
+        <div class="modal fade" id="assign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <button type="button" class="close text-xxl" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title text-center" id="myModalLabel">Add Teacher</h3>
+                    </div>
+                    <form action="" method="post">
+                        <div class="modal-body">
+                            <label><strong>Teacher ID</strong></label>
+                            <input class="form-control" name="tcid" type="text" /><br/>
+                            <label><strong>Student ID</strong></label>
+                            <input class="form-control" name="stid" type="password" /><br/>
+                                                       
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Save Teacher</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        
         <!-- Intro Section -->
         <section id="intro" class="intro-section">
             <div class="container">
@@ -93,14 +185,14 @@
             <section id="contact" class="contact-section">
         
             </section>-->
-         
-        
+
+
         <footer class="footer">
             <div class="bg-glow">
                 <p class="text-ash-lt text-center">Created By us</p>
             </div>
         </footer>
-        
+
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="../../assets/js/bootstrap.min.js"></script>
