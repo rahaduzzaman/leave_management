@@ -136,7 +136,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Modal for Teacher -->
         <div class="modal fade" id="assign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
@@ -151,57 +151,58 @@
                             <input class="form-control" name="tcid" type="text" /><br/>
                             <label><strong>Student ID</strong></label>
                             <input class="form-control" name="stid" type="password" /><br/>
-                                                       
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Save Teacher</button>
-                        </div>
+
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Save Teacher</button>
+                            </div>
                     </form>
                 </div>
             </div>
         </div>
-        
-        
-        
-        <!-- Intro Section -->
-        <section id="intro" class="intro-section">
-            <div class="container">
-                Admin Details
-            </div>
+    </div>
 
-        </section>
 
-        <!--         About Section 
-                <section id="about" class="about-section">
-        
-                </section>
-        
-                 Services Section 
-                <section id="services" class="services-section">
-        
-                </div>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            Admin Details
+        </div>
+
+    </section>
+
+    <!--         About Section 
+            <section id="about" class="about-section">
+    
             </section>
-        
-             Contact Section 
-            <section id="contact" class="contact-section">
-        
-            </section>-->
-
-
-        <footer class="footer">
-            <div class="bg-glow">
-                <p class="text-ash-lt text-center">Created By us</p>
+    
+             Services Section 
+            <section id="services" class="services-section">
+    
             </div>
-        </footer>
+        </section>
+    
+         Contact Section 
+        <section id="contact" class="contact-section">
+    
+        </section>-->
 
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="../../assets/js/bootstrap.min.js"></script>
 
-        <!-- Scrolling Nav JavaScript -->
-        <script src="../../assets/js/jquery.easing.min.js"></script>
-        <script src="../../assets/js/scrolling-nav.js"></script>
-        <script src="../../assets/js/script.js"></script>
+    <footer class="footer">
+        <div class="bg-glow">
+            <p class="text-ash-lt text-center">Created By us</p>
+        </div>
+    </footer>
 
-    </body>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../assets/js/jquery.easing.min.js"></script>
+    <script src="../../assets/js/scrolling-nav.js"></script>
+    <script src="../../assets/js/script.js"></script>
+
+</body>
 </html>
 
