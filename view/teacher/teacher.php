@@ -12,7 +12,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Admin | LM</title>
+        <title>Teacher | LM</title>
 
         <!-- Bootstrap -->
         <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@
                             <a class="page-scroll" href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#">Hi <span class="text-green-lt"> Admin</span></a>
+                            <a class="page-scroll" href="#">Hi <span class="text-green-lt"> John</span></a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#services"><span class="text-danger">Logout</span></a>
@@ -60,9 +60,8 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="page-scroll" href="#">Home</a></li>
-                        <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#addstudent"> Add Student</a></li>
-                        <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#addteacher">Add Teacher</a></li>
-                        <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#assign">Assign Teacher</a></li>
+                        <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#sanction"> Leave Sanction</a></li>
+                        <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#history">Leave History</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -72,96 +71,63 @@
 
 
         <!-- Modal for Student -->
-        <div class="modal fade" id="addstudent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
+        <div class="modal fade" id="sanction" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content ">
                     <div class="modal-header bg-info">
                         <button type="button" class="close text-xxl" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title text-center" id="myModalLabel">Add Student</h3>
+                        <h3 class="modal-title text-center" id="myModalLabel">Sanction leave</h3>
                     </div>
-                    <form action="" method="post">
-                        <div class="modal-body">
-                            <label><strong>Student Name</strong></label>
-                            <input class="form-control" name="stname" type="text" /><br/>
-                            <label><strong>Password</strong></label>
-                            <input class="form-control" name="stpass" type="password" /><br/>
-                            <label><strong>Email</strong></label>
-                            <input class="form-control" name="stemail" type="email" /><br/>
-                            <label><strong>Gender</strong></label>
-                            <select class="form-control" name="stsex" >
-                                <option>Select Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">female</option>
-                            </select> <br/>
-                            <label><strong>Phone No</strong></label>
-                            <input class="form-control" name="stnum" type="number" /><br/>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form action="" method="post">
+                                <div class="modal-body">
+                                    <label><strong>Leave application subject</strong></label>
+                                    <select class="form-control" name="lsubject" >
+                                        <option>Leave Subject</option>
+                                        <option value="">Fever</option>
+                                        <option value="">Other</option>
+                                    </select> <br/>
+                                    <label><strong>Status</strong></label>
+                                    <div class="radio">
+                                        <label><input type="radio" name="check" value="">Approve</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="check" value="">Not Approve</label>
+                                    </div>
+                                    <label><strong>Description</strong></label>
+                                    <textarea class="form-control" name="dynamic"></textarea><br/>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary pull-left">Sanction Leave</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Save Student</button>
-                        </div>
-                    </form>
+                        <div class="col-md-4">Description</div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Modal for Teacher -->
-        <div class="modal fade" id="addteacher" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
+        <div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header bg-info">
                         <button type="button" class="close text-xxl" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title text-center" id="myModalLabel">Add Teacher</h3>
+                        <h3 class="modal-title text-center" id="myModalLabel">Leave history</h3>
                     </div>
                     <form action="" method="post">
                         <div class="modal-body">
-                            <label><strong>Teacher Name</strong></label>
-                            <input class="form-control" name="tcname" type="text" /><br/>
-                            <label><strong>Password</strong></label>
-                            <input class="form-control" name="tcpass" type="password" /><br/>
-                            <label><strong>Email</strong></label>
-                            <input class="form-control" name="tcemail" type="email" /><br/>
-                            <label><strong>Gender</strong></label>
-                            <select class="form-control" name="tcsex" >
-                                <option>Select Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">female</option>
-                            </select> <br/>
-                            <label><strong>Phone No</strong></label>
-                            <input class="form-control" name="tcnum" type="number" /><br/>
+
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Save Teacher</button>
+
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Teacher -->
-        <div class="modal fade" id="assign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-info">
-                        <button type="button" class="close text-xxl" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title text-center" id="myModalLabel">Add Teacher</h3>
-                    </div>
-                    <form action="" method="post">
-                        <div class="modal-body">
-                            <label><strong>Teacher ID</strong></label>
-                            <input class="form-control" name="tcid" type="text" /><br/>
-                            <label><strong>Student ID</strong></label>
-                            <input class="form-control" name="stid" type="password" /><br/>
-
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">Save Teacher</button>
-                            </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section bg-none">
@@ -170,9 +136,9 @@
                 <div class="col-md-12 bg-white">
                     <div class="row p-lg">
                         <div class="col-md-8 text-left">
-                            <h1>Admin Page</h1>
-                            <p class="text-sm">This is admin Page</p>
-                            <p class="text-sm">Please Add "Student" or "Teacher" and assign teacher to student</p>
+                            <h1>Teacher's Page</h1>
+                            <p class="text-sm">This is teacher Page</p>
+                            <p class="text-sm">Please sanction leave to student</p>
                         </div>
                         <div class="col-md-4">
                             <div class="img-responsive">
@@ -201,7 +167,7 @@
         <section id="contact" class="contact-section">
     
         </section>-->
-   
+
 
     <footer class="footer">
         <div class="">
